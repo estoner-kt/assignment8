@@ -1,0 +1,122 @@
+<!-- PART 3
+--- Accordion-->
+
+
+
+
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Accordion</title>
+  <link rel="stylesheet" href="//code.jquery.com/ui/1.12.1/themes/base/jquery-ui.css">
+
+  <script src="https://code.jquery.com/jquery-1.12.4.js"></script>
+  <script src="https://code.jquery.com/ui/1.12.1/jquery-ui.js"></script>
+  <script>
+  $( function() {
+    var icons = {
+      header: "ui-icon-plus",
+      activeHeader: "ui-icon-minus"
+    };
+    $( "#accordion" ).accordion({
+      icons: icons
+    });
+//    $( "#toggle" ).button().on( "click", function() {
+//      if ( $( "#accordion" ).accordion( "option", "icons" ) ) {
+//        $( "#accordion" ).accordion( "option", "icons", null );
+//      } else {
+//        $( "#accordion" ).accordion( "option", "icons");
+//      }
+//    });
+       $( "#accordion" ).accordion({
+      collapsible: true
+    });
+          $('.h3').addClass('color'); 
+       $('.h3').on('click', function(){
+            $('.h3').addClass('color-change')
+           $('.h3').removeClass('color') 
+           
+       }); 
+       
+       
+  } );
+      
+      
+    
+
+
+     
+  </script>
+  <style>
+/*
+      .color{
+      background-color:cadetblue;
+      border-radius: 15px; }; 
+*/
+/*
+      
+      .color-change{ 
+          background-color: darkgoldenrod; 
+          border-top-left-radius: 15px; 
+          border-top-right-radius: 15px;  
+*/
+          
+      
+      #accordion .ui-accordion-content {
+           background-color: pink;
+          color: black; 
+        
+           border-top-left-radius: 0px; 
+          border-top-right-radius: 0px;  
+          border-bottom-right-radius: 15px; 
+          border-bottom-left-radius: 15px; 
+      }
+      
+      
+    .ui-accordion .ui-accordion-header {
+            background-color: crimson; 
+             border-radius: 15px;
+            margin-top: 10px;
+      }
+      #accordion .ui-state-active{
+            background-color: coral;
+           border-top-left-radius: 15px; 
+          border-top-right-radius: 15px;  
+          border-bottom-right-radius: 0px; 
+          border-bottom-left-radius: 0px; 
+      }
+      
+      
+      
+   
+    
+    </style>
+</head>
+<body>
+ 
+<div id="accordion">
+  <h3 class="h3">Section 1</h3>
+  <div>
+    <p>Mauris mauris ante, blandit et, ultrices a, suscipit eget, quam. Integer ut neque. Vivamus nisi metus, molestie vel, gravida in, condimentum sit amet, nunc.</p>
+  </div>
+  <h3 class="h3">Section 2</h3>
+  <div>
+    <p>Sed non urna. Donec et ante. Phasellus eu ligula. Vestibulum sit amet purus. . </p>
+  </div>
+  <h3 class="h3">Section 3</h3>
+  <div>
+    <p>Nam enim risus, molestie et, porta ac, aliquam ac, risus. Quisque lobortis. Phasellus pellentesque purus in massa. Aenean in pede.  </p>
+
+  </div>
+  <h3 class="h3">Section 4</h3>
+  <div>
+    <p>Cras dictum. Pellentesque habitant morbi tristique senectus et netus et malesuada fames ac turpis egestas. Vestibulum ante ipsum primis in faucibus orci luctus et ultrices posuere cubilia Curae; Aenean lacinia mauris vel est. </p>
+  </div>
+</div>
+ 
+ 
+ 
+</body>
+</html>

@@ -1,0 +1,57 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>jQuery UI Tabs - Default functionality</title>
+  <link rel="stylesheet" href="//code.jquery.com/ui/1.12.1/themes/base/jquery-ui.css">
+  
+  <script src="https://code.jquery.com/jquery-1.12.4.js"></script>
+  <script src="https://code.jquery.com/ui/1.12.1/jquery-ui.js"></script>
+  <script>
+  $( function() {
+    $( "#tabs" ).tabs();
+  } );
+  </script>
+  
+  <style>
+      .ui-widget.ui-widget-content {
+          border: 2px solid black; 
+          box-shadow: 0 10px 10px; 
+      }
+      .ui-tabs .ui-tabs-nav{
+          background-color: beige; 
+      }
+      .ui-tabs .ui-tabs-nav .ui-tabs-anchor
+      {background-color:coral }
+      .ui-tabs .ui-tabs-nav li.ui-tabs-active .ui-tabs-anchor{
+         background-color: crimson;  
+      }
+      .ui-tabs .ui-tabs-panel{
+          background-color: aliceblue; 
+      }
+    </style>
+</head>
+<body>
+ 
+<div id="tabs">
+  <ul>
+    <li><a href="#tabs-1">Class information</a></li>
+    <li><a href="#tabs-2">Admissions</a></li>
+    <li><a href="#tabs-3">Instructor</a></li>
+  </ul>
+  <div id="tabs-1">
+    <p>Web Development is a useful class! Sign up today.</p>
+  </div>
+  <div id="tabs-2">
+    <p>Anyone Can take the class! Classes are help morning and evening time. </p>
+  </div>
+  
+  <div id="tabs-3">
+    <p>Instructor Zak Ruvalcaba is great!</p>
+  </div>
+</div>
+ 
+ 
+</body>
+</html>
